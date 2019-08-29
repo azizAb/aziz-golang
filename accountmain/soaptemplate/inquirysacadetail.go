@@ -18,17 +18,17 @@ type InquirySACADetailResp struct {
 		InquirySACADetailResponse struct {
 			XMLName xml.Name
 			Return  struct {
-				AvaliableBalance string `xml:"avaliableBalance"`
-				CifNo            string `xml:"cifNo"`
-				IdNo             string `xml:"idNo"`
-				IdType           string `xml:"idType"`
-				LedgerBalance    string `xml:"ledgerBalance"`
-				MinimumBalance   string `xml:"minimumBalance"`
-				Name             string `xml:"name"`
-				ResponseCode     string `xml:"responseCode"`
-				ResponseDesc     string `xml:"responseDesc"`
-				Sccode           string `xml:"sccode"`
-				StatusRekening   string `xml:"statusRekening"`
+				AvaliableBalance string `xml:"avaliableBalance" json:"avaliableBalance"`
+				CifNo            string `xml:"cifNo" json:"cifNo"`
+				IdNo             string `xml:"idNo" json:"idNo"`
+				IdType           string `xml:"idType" json:"idType"`
+				LedgerBalance    string `xml:"ledgerBalance" json:"ledgerBalance"`
+				MinimumBalance   string `xml:"minimumBalance" json:"minimumBalance"`
+				Name             string `xml:"name" json:"name"`
+				ResponseCode     string `xml:"responseCode" json:"responseCode"`
+				ResponseDesc     string `xml:"responseDesc" json:"responseDesc"`
+				Sccode           string `xml:"sccode" json:"sccode"`
+				StatusRekening   string `xml:"statusRekening" json:"statusRekening"`
 			} `xml:"return"`
 		} `xml:"inquirySACADetailResponse"`
 	}

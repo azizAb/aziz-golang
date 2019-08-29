@@ -5,36 +5,36 @@ import (
 )
 
 type CustDataAndAccountReq struct {
-	AccountType            string
-	Address                string
-	CellPhoneNumber        string
-	CustomerName           string
-	DailyTransactionAmount string
-	DateOfBirth            string
-	Education              string
-	EmailAddress           string
-	FieldWork              string
-	IdNo                   string
-	IncomeSource           string
-	MaritalStatus          string
-	MonthlyIncome          string
-	MotherName             string
-	NpwpNo                 string
-	OfficeAddress          string
-	OfficeName             string
-	OpeningAccountPurpose  string
-	PeriodOfWork           string
-	PhoneNumber            string
-	PlaceOfBirth           string
-	ProductType            string
-	Religion               string
-	RequestBy              string
-	RtNo                   string
-	RwNo                   string
-	Sex                    string
-	TypeOfWork             string
-	WorkingPosition        string
-	ZipCode                string
+	AccountType            string `json:"accountType"`
+	Address                string `json:"address"`
+	CellPhoneNumber        string `json:"cellPhoneNumber"`
+	CustomerName           string `json:"customerName"`
+	DailyTransactionAmount string `json:"dailyTransactionAmount"`
+	DateOfBirth            string `json:"dateOfBirth"`
+	Education              string `json:"education"`
+	EmailAddress           string `json:"emailAddress"`
+	FieldWork              string `json:"fieldWork"`
+	IdNo                   string `json:"idNo"`
+	IncomeSource           string `json:"incomeSource"`
+	MaritalStatus          string `json:"maritalStatus"`
+	MonthlyIncome          string `json:"monthlyIncome"`
+	MotherName             string `json:"motherName"`
+	NpwpNo                 string `json:"npwpNo"`
+	OfficeAddress          string `json:"officeAddress"`
+	OfficeName             string `json:"officeName"`
+	OpeningAccountPurpose  string `json:"openingAccountPurpose"`
+	PeriodOfWork           string `json:"periodOfWork"`
+	PhoneNumber            string `json:"phoneNumber"`
+	PlaceOfBirth           string `json:"placeOfBirth"`
+	ProductType            string `json:"productType"`
+	Religion               string `json:"religion"`
+	RequestBy              string `json:"requestBy"`
+	RtNo                   string `json:"rtNo"`
+	RwNo                   string `json:"rwNo"`
+	Sex                    string `json:"sex"`
+	TypeOfWork             string `json:"typeOfWork"`
+	WorkingPosition        string `json:"workingPosition"`
+	ZipCode                string `json:"zipCode"`
 }
 
 type CustDataAndAccountResp struct {
@@ -44,10 +44,10 @@ type CustDataAndAccountResp struct {
 		CreateCustDataAndAccountResponse struct {
 			XMLName xml.Name
 			Return  struct {
-				AccountNumber string `xml:"accountNumber"`
-				CifNo         string `xml:"cifNo"`
-				ResponseCode  string `xml:"responseCode"`
-				ResponseDesc  string `xml:"responseDesc"`
+				AccountNumber string `xml:"accountNumber" json:"accountNumber"`
+				CifNo         string `xml:"cifNo" json:"cifNo"`
+				ResponseCode  string `xml:"responseCode" json:"responseCode"`
+				ResponseDesc  string `xml:"responseDesc" json:"responseDesc"`
 			} `xml:"return"`
 		} `xml:"createCustDataAndAccountResponse"`
 	}

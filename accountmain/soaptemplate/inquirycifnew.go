@@ -18,58 +18,58 @@ type InquiryCIFNewResp struct {
 		InquiryCIFNewResponse struct {
 			XMLName xml.Name
 			Return  struct {
-				Address                 string `xml:"address"`
-				Address2                string `xml:"address2"`
-				Address3                string `xml:"address3"`
-				Address4                string `xml:"address4"`
-				AddressRT               string `xml:"addressRT"`
-				AddressRW               string `xml:"addressRW"`
-				Agama                   string `xml:"agama"`
-				AlamatSuratMenyurat     string `xml:"alamatSuratMenyurat"`
-				BirthDate               string `xml:"birthDate"`
-				CcCode                  string `xml:"ccCode"`
-				CifNo                   string `xml:"cifNo"`
-				City                    string `xml:"city"`
-				DailyTrx                string `xml:"dailyTrx"`
-				Education               string `xml:"education"`
-				EducationDesc           string `xml:"educationDesc"`
-				Email                   string `xml:"email"`
-				Hobby                   string `xml:"hobby"`
-				HobbyDesc               string `xml:"hobbyDesc"`
-				IdNo                    string `xml:"idNo"`
-				IdType                  string `xml:"idType"`
-				Jabatan                 string `xml:"jabatan"`
-				JabatanDesc             string `xml:"jabatanDesc"`
-				Kecamatan               string `xml:"kecamatan"`
-				Kelurahan               string `xml:"kelurahan"`
-				MaritalStatus           string `xml:"maritalStatus"`
-				MotherName              string `xml:"motherName"`
-				Nama                    string `xml:"nama"`
-				NoHP                    string `xml:"noHP"`
-				NoTelp                  string `xml:"noTelp"`
-				OfficeAddress           string `xml:"officeAddress"`
-				OfficeCity              string `xml:"officeCity"`
-				OfficeKecamatan         string `xml:"officeKecamatan"`
-				OfficeKelurahan         string `xml:"officeKelurahan"`
-				OfficeName              string `xml:"officeName"`
-				OfficeNoTelp            string `xml:"officeNoTelp"`
-				OfficeZipCode           string `xml:"officeZipCode"`
-				Pekerjaan               string `xml:"pekerjaan"`
-				PekerjaanDesc           string `xml:"pekerjaanDesc"`
-				PenghasilanPerbulan     string `xml:"penghasilanPerbulan"`
-				PepFlag                 string `xml:"pepFlag"`
-				PepFlagKeluarga         string `xml:"pepFlagKeluarga"`
-				PepStatusKeluarga       string `xml:"pepStatusKeluarga"`
-				PlaceOfBirth            string `xml:"placeOfBirth"`
-				Province                string `xml:"province"`
-				ResponseCode            string `xml:"responseCode"`
-				ResponseDesc            string `xml:"responseDesc"`
-				Sex                     string `xml:"sex"`
-				SumberUtama             string `xml:"sumberUtama"`
-				SumberUtamaDesc         string `xml:"sumberUtamaDesc"`
-				TujuanPembukaanRekening string `xml:"tujuanPembukaanRekening"`
-				TypeOfWork              string `xml:"typeOfWork"`
-				ZipCode                 string `xml:"zipCode"`
+				Address                 string `xml:"address" json:"address"`
+				Address2                string `xml:"address2" json:"address2"`
+				Address3                string `xml:"address3" json:"address3"`
+				Address4                string `xml:"address4" json:"address4"`
+				AddressRT               string `xml:"addressRT" json:"addressRT"`
+				AddressRW               string `xml:"addressRW" json:"addressRW"`
+				Agama                   string `xml:"agama" json:"agama"`
+				AlamatSuratMenyurat     string `xml:"alamatSuratMenyurat" json:"alamatSuratMenyurat"`
+				BirthDate               string `xml:"birthDate" json:"birthDate"`
+				CcCode                  string `xml:"ccCode" json:"ccCode"`
+				CifNo                   string `xml:"cifNo" json:"cifNo"`
+				City                    string `xml:"city" json:"city"`
+				DailyTrx                string `xml:"dailyTrx" json:"dailyTrx"`
+				Education               string `xml:"education" json:"education"`
+				EducationDesc           string `xml:"educationDesc" json:"educationDesc"`
+				Email                   string `xml:"email" json:"email"`
+				Hobby                   string `xml:"hobby" json:"hobby"`
+				HobbyDesc               string `xml:"hobbyDesc" json:"hobbyDesc"`
+				IdNo                    string `xml:"idNo" json:"idNo"`
+				IdType                  string `xml:"idType" json:"idType"`
+				Jabatan                 string `xml:"jabatan" json:"jabatan"`
+				JabatanDesc             string `xml:"jabatanDesc" json:"jabatanDesc"`
+				Kecamatan               string `xml:"kecamatan" json:"kecamatan"`
+				Kelurahan               string `xml:"kelurahan" json:"kelurahan"`
+				MaritalStatus           string `xml:"maritalStatus" json:"maritalStatus"`
+				MotherName              string `xml:"motherName" json:"motherName"`
+				Nama                    string `xml:"nama" json:"nama"`
+				NoHP                    string `xml:"noHP" json:"noHP"`
+				NoTelp                  string `xml:"noTelp" json:"noTelp"`
+				OfficeAddress           string `xml:"officeAddress" json:"officeAddress"`
+				OfficeCity              string `xml:"officeCity" json:"officeCity"`
+				OfficeKecamatan         string `xml:"officeKecamatan" json:"officeKecamatan"`
+				OfficeKelurahan         string `xml:"officeKelurahan" json:"officeKelurahan"`
+				OfficeName              string `xml:"officeName" json:"officeName"`
+				OfficeNoTelp            string `xml:"officeNoTelp" json:"officeNoTelp"`
+				OfficeZipCode           string `xml:"officeZipCode" json:"officeZipCode"`
+				Pekerjaan               string `xml:"pekerjaan" json:"pekerjaan"`
+				PekerjaanDesc           string `xml:"pekerjaanDesc" json:"pekerjaanDesc"`
+				PenghasilanPerbulan     string `xml:"penghasilanPerbulan" json:"penghasilanPerbulan"`
+				PepFlag                 string `xml:"pepFlag" json:"pepFlag"`
+				PepFlagKeluarga         string `xml:"pepFlagKeluarga" json:"pepFlagKeluarga"`
+				PepStatusKeluarga       string `xml:"pepStatusKeluarga" json:"pepStatusKeluarga"`
+				PlaceOfBirth            string `xml:"placeOfBirth" json:"placeOfBirth"`
+				Province                string `xml:"province" json:"province"`
+				ResponseCode            string `xml:"responseCode" json:"responseCode"`
+				ResponseDesc            string `xml:"responseDesc" json:"responseDesc"`
+				Sex                     string `xml:"sex" json:"sex"`
+				SumberUtama             string `xml:"sumberUtama" json:"sumberUtama"`
+				SumberUtamaDesc         string `xml:"sumberUtamaDesc" json:"sumberUtamaDesc"`
+				TujuanPembukaanRekening string `xml:"tujuanPembukaanRekening" json:"tujuanPembukaanRekening"`
+				TypeOfWork              string `xml:"typeOfWork" json:"typeOfWork"`
+				ZipCode                 string `xml:"zipCode" json:"zipCode"`
 			} `xml:"return"`
 		} `xml:"inquiryCIFNewResponse"`
 	}

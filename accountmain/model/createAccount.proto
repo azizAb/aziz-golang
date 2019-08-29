@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package model;
+
+message CreateAccount {
+    string id = 1;
+    string requestId = 2;
+    string creator = 3;
+    string createDate = 4;
+    string approver = 5;
+    string updateDate = 6;
+    string status = 7;
+    string content = 8;
+}
+
+message CreateAccountList {
+    repeated CreateAccount list = 1;
+}
+
+// ==== for service
+
+import "google/protobuf/empty.proto";
+
+service CreateAccounts {
+    rpc Register(CreateAccount) returns (google.protobuf.Empty) {}
+    rpc List(google.protobuf.Empty) returns (CreateAccountList) {}
+}

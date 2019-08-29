@@ -5,11 +5,11 @@ import (
 )
 
 type CreateAccountReq struct {
-	AccountType  string
-	CifNo        string
-	CustomerName string
-	productType  string
-	requestBy    string
+	AccountType  string `json:"accountType"`
+	CifNo        string `json:"cifNo"`
+	CustomerName string `json:"customerName"`
+	ProductType  string `json:"productType"`
+	RequestBy    string `json:"requestBy"`
 }
 
 type CreateAccountResp struct {
@@ -19,9 +19,9 @@ type CreateAccountResp struct {
 		CreateAccountResponse struct {
 			XMLName xml.Name
 			Return  struct {
-				AccountNumber string `xml:"accountNumber"`
-				ResponseCode  string `xml:"responseCode"`
-				ResponseDesc  string `xml:"responseDesc"`
+				AccountNumber string `xml:"accountNumber" json:"accountNumber"`
+				ResponseCode  string `xml:"responseCode" json:"responseCode"`
+				ResponseDesc  string `xml:"responseDesc" json:"responseDesc"`
 			} `xml:"return"`
 		} `xml:"createAccountResponse"`
 	}
@@ -37,8 +37,8 @@ func CreateAccountString(req CreateAccountReq) (resp string) {
             <xsd:accountType>` + req.AccountType + `</xsd:accountType>
             <xsd:cifNo>` + req.CifNo + `</xsd:cifNo>
             <xsd:customerName>` + req.CustomerName + `</xsd:customerName>
-            <xsd:productType>` + req.productType + `</xsd:productType>
-            <xsd:requestBy>` + req.requestBy + `</xsd:requestBy>
+            <xsd:productType>` + req.ProductType + `</xsd:productType>
+            <xsd:requestBy>` + req.RequestBy + `</xsd:requestBy>
          </ser:request>
       </ser:createAccount>
    </soap:Body>

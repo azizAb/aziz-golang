@@ -16,23 +16,23 @@ type InquiryIDResp struct {
 		InquiryIDResponse struct {
 			XMLName xml.Name
 			Return  struct {
-				Address       string `xml:"address"`
-				CifNo         string `xml:"cifNo"`
-				CustomerName  string `xml:"customerName"`
-				DateOfBirth   string `xml:"dateOfBirth"`
-				Education     string `xml:"education"`
-				IdNo          string `xml:"idNo"`
-				MaritalStatus string `xml:"maritalStatus"`
-				MotherName    string `xml:"motherName"`
-				PlaceOfBirth  string `xml:"placeOfBirth"`
-				Religion      string `xml:"religion"`
-				ResponseCode  string `xml:"responseCode"`
-				ResponseDesc  string `xml:"responseDesc"`
-				RtNo          string `xml:"rtNo"`
-				RwNo          string `xml:"rwNo"`
-				Sex           string `xml:"sex"`
-				TypeOfWork    string `xml:"typeOfWork"`
-				ZipCode       string `xml:"zipCode"`
+				Address       string `xml:"address" json:"address"`
+				CifNo         string `xml:"cifNo" json:"cifNo"`
+				CustomerName  string `xml:"customerName" json:"customerName"`
+				DateOfBirth   string `xml:"dateOfBirth" json:"dateOfBirth"`
+				Education     string `xml:"education" json:"education"`
+				IdNo          string `xml:"idNo" json:"idNo"`
+				MaritalStatus string `xml:"maritalStatus" json:"maritalStatus"`
+				MotherName    string `xml:"motherName" json:"motherName"`
+				PlaceOfBirth  string `xml:"placeOfBirth" json:"placeOfBirth"`
+				Religion      string `xml:"religion" json:"religion"`
+				ResponseCode  string `xml:"responseCode" json:"responseCode"`
+				ResponseDesc  string `xml:"responseDesc" json:"responseDesc"`
+				RtNo          string `xml:"rtNo" json:"rtNo"`
+				RwNo          string `xml:"rwNo" json:"rwNo"`
+				Sex           string `xml:"sex" json:"sex"`
+				TypeOfWork    string `xml:"typeOfWork" json:"typeOfWork"`
+				ZipCode       string `xml:"zipCode" json:"zipCode"`
 			} `xml:"return"`
 		} `xml:"inquiryIDResponse"`
 	}
